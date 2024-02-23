@@ -30,7 +30,7 @@ if uploaded_file is not None:
     with open(pdf_path, "wb") as f:
         f.write(uploaded_file.getvalue())
 
-    st.success(f"File {uploaded_file.name} successfully uploaded to {st.session_state.temp_path}")
+    st.success(f"{uploaded_file.name} successfully uploaded to temporary folder.")
 
 
 def format_docs(docs):
@@ -81,8 +81,3 @@ if st.session_state.temp_path is not None:
         response = chain.invoke(question)
         st.session_state.messages.append({"role": "assistant", "content": response})
         st.chat_message("assistant").write(response)
-
-    # question = st.text_input("Enter your message")
-    # response = chain.invoke(question)
-    # if question:
-    #     st.write(response)
