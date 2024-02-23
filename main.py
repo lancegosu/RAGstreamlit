@@ -6,7 +6,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.runnables import RunnablePassthrough
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 import tempfile
 from dotenv import load_dotenv
 
@@ -44,7 +44,7 @@ if st.session_state.temp_path is not None:
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
 
     splits = text_splitter.split_documents(docs)
-    vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings())
+    vectorstore = FAISS.from_documents(documents=splits, embedding=OpenAIEmbeddings())
 
     retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
