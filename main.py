@@ -15,7 +15,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 st.set_page_config(page_title='RAG')
 st.title('🦜🔗 LangChain RAG')
-st.caption('Optimizing the RAG pipeline in progress...")
+st.caption('Optimizing the RAG pipeline in progress...')
 
 st.sidebar.write('[My Portfolio](https://lancen.streamlit.app/)')
 st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/)")
