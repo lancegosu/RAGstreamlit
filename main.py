@@ -22,7 +22,7 @@ st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/
 
 st.sidebar.info(
     """
-    Info: Connect your data with a LLM! Upload any file(s) you want to ask questions about.
+    Info: Connect your data with a LLM! Upload any PDF(s) you want to ask questions about, then a chatbot will appear.
     """
 )
 
@@ -35,7 +35,7 @@ with st.sidebar.expander('**My Other Apps**'):
 if 'temp_path' not in st.session_state:
     st.session_state.temp_path = None
 
-uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
+uploaded_file = st.file_uploader("Upload a PDF file to activate the chatbot", type=["pdf"])
 
 if uploaded_file is not None:
     if st.session_state.temp_path is None:
