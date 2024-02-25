@@ -22,7 +22,7 @@ st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/
 
 st.sidebar.info(
     """
-    Info: Connect your data with a LLM!
+    Info: Connect your data with a LLM! Upload any file(s) you want to ask questions about.
     """
 )
 
