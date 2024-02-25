@@ -15,6 +15,21 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 st.set_page_config(page_title='RAG')
 st.title('🦜🔗 LangChain RAG')
+st.caption('Optimizing the RAG pipeline in progress..."
+
+st.sidebar.write('[My Portfolio](https://lancen.streamlit.app/)')
+st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/)")
+
+st.sidebar.info(
+    """
+    Info: Connect your data with a LLM!
+    """
+)
+
+with st.sidebar.expander('**My Other Apps**'):
+    st.caption('[SpotOn](https://spoton.streamlit.app/)')
+    st.caption('[Qdoc](https://qdocst.streamlit.app/)')
+    st.caption('[CooPA](https://coopas.streamlit.app/)')
 
 # Save the uploaded PDF file to the temporary directory
 if 'temp_path' not in st.session_state:
