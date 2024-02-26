@@ -22,7 +22,7 @@ st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/
 
 st.sidebar.info(
     """
-    Info: Connect your data to a LLM! Upload any PDF(s) you want to ask questions about, then a chatbot will appear.
+    Info: Connect your data to an LLM! Upload any PDF(s) you want to ask questions about, then a chatbot will appear.
     """
 )
 
