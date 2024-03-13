@@ -27,9 +27,9 @@ st.sidebar.info(
 )
 
 with st.sidebar.expander('**My Other Apps**'):
-    st.caption('[SpotOn](https://spoton.streamlit.app/)')
-    st.caption('[Qdoc](https://qdocst.streamlit.app/)')
-    st.caption('[CooPA](https://coopas.streamlit.app/)')
+    st.caption('[SpotOn (Review Analysis)](https://spoton.streamlit.app/)')
+    st.caption('[Qdoc (Article Assistant)](https://qdocst.streamlit.app/)')
+    st.caption('[CooPA (Search Chatbot)](https://coopas.streamlit.app/)')
 
 # Save the uploaded PDF file to the temporary directory
 if 'temp_path' not in st.session_state:
